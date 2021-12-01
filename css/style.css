@@ -1,0 +1,373 @@
+*{
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: #f6f6f6;
+	opacity: 1;
+	background-image:  radial-gradient(#145c9e 0.75px, transparent 0.75px), radial-gradient(#145c9e 0.75px, #f6f6f6 0.75px);
+	background-size: 30px 30px;
+	background-position: 0 0,15px 15px;
+}
+.container-fluid{
+	padding: 0;
+}
+.row{
+	margin: 0;
+	padding: 0;
+}
+/*============================================
+=            HEADER comment block            =
+============================================*/
+.nav-link{
+  text-decoration: none;
+	color: #121113;
+	padding: 30px 10px;
+	font-size: 2em;
+	text-shadow: 1px 1px #145c9e;
+	font-weight: bolder;
+}
+.nav-link:hover{
+  color: #145c9e;
+  text-shadow: 1px 1px #121113;
+}
+.nav-link:active{
+  color: #121113;
+  text-shadow: 1px 1px #121113;
+}
+.nav-item{
+	padding: 0 30px;
+}
+.nav-item:hover{
+  color: #145c9e;
+  text-shadow: 1px 1px #121113;
+  transform: translateY(-10px);
+  transition: transform .5s;
+}
+.logo{
+	margin-left: 20px;
+}
+.navbar{
+	padding: 0;
+}
+#navbarNav{
+	justify-content: space-evenly;
+}
+.navbar-nav:hover > a{
+  color: #145c9e;
+}
+.navbar-bg{
+	background: #ffffff;
+}
+.fas{
+	padding: 0 10px; /* iconos  */
+}
+hr{
+	background: linear-gradient(90deg,#121113,#145c9e,#121113);
+	height: 7px;	
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+@media (max-width: 768px) {
+.nav-link {
+	font-size: 1.5em;
+	padding: 5px;
+	margin: 0;
+}
+}
+/*=====  End of HEADER comment block  ======*/
+
+/* ----------------------------------------- */
+
+/*==========================================
+=        MAIN INDEX comment block            =
+==========================================*/
+.img-fluid{
+	padding: 0;
+	max-width: 100%;
+}
+h1, h2{
+	font-size: 6em;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 4px 4px #145c9e;
+	font-weight: bolder;
+}
+@media (max-width: 768px) {
+h1{
+	font-size: 3em;
+}
+h2 {
+	font-size: 2em;
+}
+}
+.cajaParrafo{
+	font-weight: bolder;
+	text-align: justify;
+	max-width: 75%;
+	height: auto;
+	padding: 5px;
+	margin: auto;
+	margin-bottom: 40px;
+	background: #f6f6f6;
+}
+main div p{
+	width: 100%;
+	font-size: 1em;
+}
+@media (max-width: 768px) {
+main div p {
+	font-size: .7em;
+}
+}
+
+/*=====  End of MAIN comment block  ======*/
+
+/* ----------------------------------------- */
+
+/*============================================
+=            FOOTER comment block            =
+============================================*/
+footer{
+	background: #121113;
+}
+.cajaCopy{
+	align-content: flex-end;
+	justify-content: center;
+}
+.fa-copyright{
+	color: #f6f6f6;
+	display: flex;
+	justify-content: flex-end;
+}
+.texto{
+	color: #f6f6f6;
+	font-size: 1em;
+	align-content: center;
+	margin: 0;
+}
+.redes{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@media (max-width: 768px) {
+.fa-copyright{
+	justify-content: center;
+}
+.texto{
+	font-size: .8em;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+}
+
+/*=====  End of FOOTER comment block  ======*/
+
+/* ----------------------------------------- */
+
+/*============================================
+=       NUESTROS PRODUCTOS comment block     =
+============================================*/
+.cajaProd{
+	margin-right: 100px;	
+}
+.fotoProd{
+	border: #145c9e 5px outset;
+}
+.fotoProd:hover{
+	transform: scale(1.01,1.01);
+	box-shadow: 5px 5px 10px #121113;
+	transition: all .5s;
+}
+.seccion1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.cajaLista{
+	margin: 30px;
+}
+.listas{
+	list-style-image: url(../assets/check.png);
+	font-weight: bolder;
+	margin: 50px;
+	background: #f6f6f6;
+}
+.listas li:hover{
+	transform: scale(1.2,1.2);
+	transition: all .5s;
+}
+.aside{
+	background: #f6f6f6;
+	text-align: left;
+	margin-left: 80px;
+}
+.lineaNp{
+	height: 10px;
+  background-image: linear-gradient(90deg, transparent, #145c9e, transparent);
+  border: 0;
+  height: 4px;
+  position: relative;
+  bottom: -5px;
+}
+@media (max-width: 768px) {
+	.cajaProd{
+	display: flex;
+	justify-content: center;
+	}
+}
+
+/*=====  End of NUESTROS PRODUCTOS comment block  ======*/
+
+/* ----------------------------------------- */
+
+/*============================================
+=            NOSOTROS comment block            =
+============================================*/
+.contTitulo{
+	display: flex;
+	justify-content: center;
+}
+.pNosotros{
+	text-align: justify;
+	width: 100%;
+	font-size: 1.3em;
+	background: #f6f6f6;
+}
+.fotoNosotros{
+	border: #145c9e 5px outset;
+	padding: 0;
+	margin: auto;
+	margin-bottom: 10px;
+}
+.fotoNosotros:hover{
+	transform: scale(1.005,1.005);
+	box-shadow: 5px 5px 10px #121113;
+	transition: all .5s;
+}
+.textoNosotros{
+	text-align: center;
+	font-weight: bolder;
+	font-size: 1em;
+	background: #f6f6f6;
+}
+.linea{
+	height: 10px;
+  background-image: linear-gradient(90deg, transparent, #145c9e, transparent);
+  border: 0;
+  height: 4px;
+  position: relative;
+  bottom: 10px;
+}
+@media (max-width: 768px) {
+.textoNosotros{
+	font-size: .6em;
+}
+.pNosotros{
+	font-size: .8em;
+}
+}
+
+/*=====  End of NOSOTROS comment block  ======*/
+
+/* ----------------------------------------- */
+
+/*===============================================
+=            UBICACION comment block            =
+===============================================*/
+
+.cajaUbicacion{
+	justify-content: center;
+	max-width: 100%;
+	height: auto;
+	margin-top: 20px;
+}
+.iframe{
+	border: #145c9e 5px outset;
+	width: 100%;
+	padding: 0;
+}
+.iframe:hover{
+	transform: scale(1.01,1.01);
+	box-shadow: 5px 5px 10px #121113;
+	transition: all .5s;
+}
+/*=====  End of UBICACION comment block  ======*/
+
+/* ----------------------------------------- */
+
+/*===============================================
+=            CONTACTANOS comment block            =
+===============================================*/
+
+#contForm{
+	margin: auto;
+}
+.flexForm{	
+	display: flex;
+	justify-content: center;
+	background: url(https://cdn.pixabay.com/photo/2017/11/13/11/45/checklist-2945401_960_720.jpg) center no-repeat;
+	color: #f6f6f6;
+	text-shadow: 1px 1px #121113;
+	font-size:1.5em;
+	border: #145c9e 5px outset;
+	border-radius: 10px;
+	width: 100%;
+	margin-bottom: 15px;
+}
+.flexForm:hover{
+	box-shadow: 5px 5px 10px #121113;
+	border: #121113 5px outset;
+	transition: all .5s;
+}
+.form{
+	text-align: center;
+}
+.form-control{
+	margin: 5px 0px;
+	background: #f6f6f6;
+	border: #121113 #f6f6f6 4px inset;
+	border-radius: 10px;
+}
+.form-control:focus{
+	transform: scale(1.1);
+	box-shadow: 5px 5px 10px #121113;
+	transition: all .5s;
+}
+.boton{
+	margin: 10px;
+}
+.boton:active{
+	transform: scale(1.1);
+	box-shadow: 5px 5px 10px #121113;
+	transition: all .5s;
+}
+label{
+	background: rgba(18, 17, 19, .5);
+	border-radius: 5px;
+	margin: 3px 0;
+}
+label:hover{
+	background: rgba(246, 246, 246, .5);
+	color: #121113;
+	transition: all .5s;	
+	text-shadow: 1px 1px #145c9e;
+}
+.boton:hover{
+	background: #f6f6f6;
+	color: #007BFF;
+}
+@media (max-width: 768px) {
+.form-control{
+	width: 100%;
+}
+.flexForm{
+	font-size: 1.2em;
+}
+}
+/*=====  End of CONTACTANOS comment block  ======*/
