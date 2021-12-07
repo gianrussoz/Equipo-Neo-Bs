@@ -1,14 +1,16 @@
 * {
-  font-family: 'Montserrat', sans-serif; }
-
+  font-family: 'Montserrat', sans-serif;}
 /*============================================
 =            VARIABLES comment block         =
 ============================================*/
+$azul: #145c9e;
+$blanco: #f6f6f6;
 /*=====  End of VARIABLES comment block  ======*/
+
 body {
-  background-color: #f6f6f6;
+  background-color: $blanco;
   opacity: 1;
-  background-image: radial-gradient(#145c9e 0.75px, transparent 0.75px), radial-gradient(#145c9e 0.75px, #f6f6f6 0.75px);
+  background-image: radial-gradient($azul 0.75px, transparent 0.75px), radial-gradient($azul 0.75px, $blanco 0.75px);
   background-size: 30px 30px;
   background-position: 0 0,15px 15px; }
 
@@ -27,22 +29,25 @@ body {
   color: #121113;
   padding: 30px 10px;
   font-size: 2em;
-  text-shadow: 1px 1px #145c9e;
-  font-weight: bolder; }
-  .nav-link:hover {
-    color: #145c9e;
-    text-shadow: 1px 1px #121113; }
-  .nav-link:active {
-    color: #121113;
-    text-shadow: 1px 1px #121113; }
+  text-shadow: 1px 1px  $azul;
+  font-weight: bolder; 
 
+&:hover {
+  color:  $azul;
+  text-shadow: 1px 1px #121113; }
+
+&:active {
+  color: #121113;
+  text-shadow: 1px 1px #121113; }
+}
 .nav-item {
-  padding: 0 30px; }
-  .nav-item:hover {
-    color: #145c9e;
-    text-shadow: 1px 1px #121113;
-    transform: translateY(-10px);
-    transition: transform .5s; }
+  padding: 0 30px; 
+
+&:hover {
+  color:  $azul;
+  text-shadow: 1px 1px #121113;
+  transform: translateY(-10px);
+  transition: transform .5s; }}
 
 .logo {
   margin-left: 20px; }
@@ -54,7 +59,7 @@ body {
   justify-content: space-evenly; }
 
 .navbar-nav:hover > a {
-  color: #145c9e; }
+  color:  $azul; }
 
 .navbar-bg {
   background: #ffffff; }
@@ -64,7 +69,7 @@ body {
   /* iconos  */ }
 
 hr {
-  background: linear-gradient(90deg, #121113, #145c9e, #121113);
+  background: linear-gradient(90deg, #121113,  $azul, #121113);
   height: 7px;
   padding: 0;
   margin: 0;
@@ -89,16 +94,16 @@ h1, h2 {
   font-size: 6em;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 4px 4px #145c9e;
+  text-shadow: 4px 4px  $azul;
   font-weight: bolder; }
 
 @media (max-width: 768px) {
   h1 {
     font-size: 3em; }
   h2 {
-    font-size: 2em; }
+    font-size: 2em; }  
   main div p {
-    font-size: .7em; } }
+    font-size: .7em; }}
 
 .cajaParrafo {
   font-weight: bolder;
@@ -108,10 +113,10 @@ h1, h2 {
   padding: 5px;
   margin: auto;
   margin-bottom: 40px;
-  background: #f6f6f6; }
-  .cajaParrafo p {
-    width: 100%;
-    font-size: 1em; }
+  background: $blanco; 
+  p {
+  width: 100%;
+  font-size: 1em; }}
 
 /*=====  End of MAIN comment block  ======*/
 /* ----------------------------------------- */
@@ -156,13 +161,13 @@ footer {
 =       NUESTROS PRODUCTOS comment block     =
 ============================================*/
 .cajaProd {
-  margin-right: 100px; }
-  .cajaProd .fotoProd {
-    border: #145c9e 5px outset; }
-  .cajaProd:hover {
-    transform: scale(1.01, 1.01);
-    box-shadow: 5px 5px 10px #121113;
-    transition: all .5s; }
+  margin-right: 100px; 
+.fotoProd {
+  border: #145c9e 5px outset; }
+&:hover {
+  transform: scale(1.01, 1.01);
+  box-shadow: 5px 5px 10px #121113;
+  transition: all .5s; }}
 
 .seccion1 {
   display: flex;
