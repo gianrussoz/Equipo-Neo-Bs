@@ -1,16 +1,50 @@
 * {
   font-family: 'Montserrat', sans-serif;}
 /*============================================
-=            VARIABLES comment block         =
+=            MAPS comment block         =
 ============================================*/
-$azul: #145c9e;
-$blanco: #f6f6f6;
-/*=====  End of VARIABLES comment block  ======*/
+$colores:(
+azul: #145c9e,
+blanco: #f6f6f6,
+negro: #121113,
+rojo: #cc0000
+);
+/*=====  End of MAPS comment block  ======*/
+
+/*==========================================
+=        EXTEND comment block            =
+==========================================*/
+h1 {
+  font-size: 6em;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 4px 4px  map-get($colores, azul);
+  font-weight: bolder; }
+
+h2{
+  @extend h1;
+  text-shadow: -4px -4px  map-get($colores, rojo);
+  color: map-get($colores, azul);
+  }
+/*=====  End of EXTEND comment block  ======*/
+
+/*==========================================
+=        MIXIN comment block            =
+==========================================*/
+@mixin left-80px{
+  text-align: left;
+  margin-left: 80px;
+}
+
+.aside{
+  @include left-80px;
+}
+/*=====  End of MIXIN comment block  ======*/
 
 body {
-  background-color: $blanco;
+  background-color: map-get($colores, blanco);
   opacity: 1;
-  background-image: radial-gradient($azul 0.75px, transparent 0.75px), radial-gradient($azul 0.75px, $blanco 0.75px);
+  background-image: radial-gradient(map-get($colores, azul) 0.75px, transparent 0.75px), radial-gradient(map-get($colores, azul) 0.75px, map-get($colores, blanco) 0.75px);
   background-size: 30px 30px;
   background-position: 0 0,15px 15px; }
 
@@ -26,25 +60,25 @@ body {
 ============================================*/
 .nav-link {
   text-decoration: none;
-  color: #121113;
+  color: map-get($colores, negro);
   padding: 30px 10px;
   font-size: 2em;
-  text-shadow: 1px 1px  $azul;
+  text-shadow: 1px 1px  map-get($colores, azul);
   font-weight: bolder; 
 
 &:hover {
-  color:  $azul;
+  color:  map-get($colores, azul);
   text-shadow: 1px 1px #121113; }
 
 &:active {
-  color: #121113;
+  color: map-get($colores, negro);
   text-shadow: 1px 1px #121113; }
 }
 .nav-item {
   padding: 0 30px; 
 
 &:hover {
-  color:  $azul;
+  color: map-get($colores, azul);
   text-shadow: 1px 1px #121113;
   transform: translateY(-10px);
   transition: transform .5s; }}
@@ -59,7 +93,7 @@ body {
   justify-content: space-evenly; }
 
 .navbar-nav:hover > a {
-  color:  $azul; }
+  color: map-get($colores, azul); }
 
 .navbar-bg {
   background: #ffffff; }
@@ -69,7 +103,7 @@ body {
   /* iconos  */ }
 
 hr {
-  background: linear-gradient(90deg, #121113,  $azul, #121113);
+  background: linear-gradient(90deg, #121113,  map-get($colores, azul), #121113);
   height: 7px;
   padding: 0;
   margin: 0;
@@ -90,13 +124,6 @@ hr {
   padding: 0;
   max-width: 100%; }
 
-h1, h2 {
-  font-size: 6em;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 4px 4px  $azul;
-  font-weight: bolder; }
-
 @media (max-width: 768px) {
   h1 {
     font-size: 3em; }
@@ -113,7 +140,7 @@ h1, h2 {
   padding: 5px;
   margin: auto;
   margin-bottom: 40px;
-  background: $blanco; 
+  background: map-get($colores, blanco); 
   p {
   width: 100%;
   font-size: 1em; }}
@@ -131,12 +158,12 @@ footer {
   justify-content: center; }
 
 .fa-copyright {
-  color: #f6f6f6;
+  color: map-get($colores, blanco);
   display: flex;
   justify-content: flex-end; }
 
 .texto {
-  color: #f6f6f6;
+  color: map-get($colores, blanco);  
   font-size: 1em;
   align-content: center;
   margin: 0; }
@@ -188,7 +215,7 @@ footer {
   transition: all .5s; }
 
 .aside {
-  background: #f6f6f6;
+  background: map-get($colores, blanco);
   text-align: left;
   margin-left: 80px; }
 
