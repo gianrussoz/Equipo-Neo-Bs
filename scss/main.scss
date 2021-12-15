@@ -215,9 +215,7 @@ footer {
   transition: all .5s; }
 
 .aside {
-  background: map-get($colores, blanco);
-  text-align: left;
-  margin-left: 80px; }
+  background: map-get($colores, blanco);}
 
 .lineaNp {
   height: 10px;
