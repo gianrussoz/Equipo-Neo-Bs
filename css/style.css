@@ -2,38 +2,15 @@
   font-family: 'Montserrat', sans-serif; }
 
 /*============================================
-=            MAPS comment block         =
+=            VARIABLES comment block         =
 ============================================*/
-/*=====  End of MAPS comment block  ======*/
-/*==========================================
-=        EXTEND comment block            =
-==========================================*/
-h1, h2 {
-  font-size: 6em;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 4px 4px #145c9e;
-  font-weight: bolder; }
-
-h2 {
-  text-shadow: -4px -4px #cc0000;
-  color: #145c9e; }
-
-/*=====  End of EXTEND comment block  ======*/
-/*==========================================
-=        MIXIN comment block            =
-==========================================*/
-.aside {
-  text-align: left;
-  margin-left: 80px; }
-
-/*=====  End of MIXIN comment block  ======*/
+/*=====  End of VARIABLES comment block  ======*/
 body {
   background-color: #f6f6f6;
   opacity: 1;
   background-image: radial-gradient(#145c9e 0.75px, transparent 0.75px), radial-gradient(#145c9e 0.75px, #f6f6f6 0.75px);
   background-size: 30px 30px;
-  background-position: 0 0,15px 15px; }                                                                                                                                                                       
+  background-position: 0 0,15px 15px; }
 
 .container-fluid {
   padding: 0; }
@@ -108,8 +85,15 @@ hr {
   padding: 0;
   max-width: 100%; }
 
+h1, h2 {
+  font-size: 6em;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 4px 4px #145c9e;
+  font-weight: bolder; }
+
 @media (max-width: 768px) {
-  h1, h2 {
+  h1 {
     font-size: 3em; }
   h2 {
     font-size: 2em; }
