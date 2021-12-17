@@ -38,7 +38,7 @@ body {
 
 &:active {
   color: #121113;
-  text-shadow: 1px 1px #121113; }
+  text-shadow: 1px 1px #145c9e; }
 }
 .nav-item {
   padding: 0 30px; 
@@ -53,7 +53,7 @@ body {
   margin-left: 20px; }
 
 .navbar {
-  padding: 0; }
+  padding: 0;}
 
 #navbarNav {
   justify-content: space-evenly; }
@@ -95,7 +95,8 @@ h1, h2 {
   text-align: center;
   text-transform: uppercase;
   text-shadow: 4px 4px  $azul;
-  font-weight: bolder; }
+  font-weight: bolder; 
+  margin: auto;}
 
 @media (max-width: 768px) {
   h1 {
@@ -144,7 +145,15 @@ footer {
 .redes {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center; 
+  & a i:hover{
+  transform: translateY(-3px);
+  transition: transform .5s;
+  color: #f6f6f6;
+  }
+  &:active{
+  color: black;
+  }}
 
 @media (max-width: 768px) {
   .fa-copyright {
@@ -162,12 +171,14 @@ footer {
 ============================================*/
 .cajaProd {
   margin-right: 100px; 
+  padding-left: 0;
+  padding-right: 0;
 .fotoProd {
-  border: #145c9e 5px outset; }
+  border: #145c9e 5px outset;}
 &:hover {
   transform: scale(1.01, 1.01);
   box-shadow: 5px 5px 10px #121113;
-  transition: all .5s; }}
+  transition: all .5s;}}
 
 .seccion1 {
   display: flex;
@@ -175,17 +186,16 @@ footer {
   align-items: center; }
 
 .cajaLista {
-  margin: 30px; }
+   }
 
 .listas {
-  list-style-image: url(../assets/check.png);
+  list-style-image: url(../assets/cheque3.png);
+  background: #f6f6f6;
   font-weight: bolder;
-  margin: 50px;
-  background: #f6f6f6; }
-
-.listas li:hover {
-  transform: scale(1.2, 1.2);
-  transition: all .5s; }
+& li:hover {
+  background: #f6f6f6;
+  transform: scale(1.10, 1.10);
+  transition: all .5s;}}
 
 .aside {
   background: #f6f6f6;
@@ -193,10 +203,10 @@ footer {
   margin-left: 80px; }
 
 .lineaNp {
-  height: 10px;
+  height: 20px;
   background-image: linear-gradient(90deg, transparent, #145c9e, transparent);
   border: 0;
-  height: 4px;
+  height: 5px;
   position: relative;
   bottom: -5px; }
 

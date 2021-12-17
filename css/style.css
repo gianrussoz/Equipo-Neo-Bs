@@ -34,7 +34,7 @@ body {
     text-shadow: 1px 1px #121113; }
   .nav-link:active {
     color: #121113;
-    text-shadow: 1px 1px #121113; }
+    text-shadow: 1px 1px #145c9e; }
 
 .nav-item {
   padding: 0 30px; }
@@ -90,7 +90,8 @@ h1, h2 {
   text-align: center;
   text-transform: uppercase;
   text-shadow: 4px 4px #145c9e;
-  font-weight: bolder; }
+  font-weight: bolder;
+  margin: auto; }
 
 @media (max-width: 768px) {
   h1 {
@@ -140,6 +141,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center; }
+  .redes a i:hover {
+    transform: translateY(-3px);
+    transition: transform .5s;
+    color: #f6f6f6; }
+  .redes:active {
+    color: black; }
 
 @media (max-width: 768px) {
   .fa-copyright {
@@ -156,7 +163,9 @@ footer {
 =       NUESTROS PRODUCTOS comment block     =
 ============================================*/
 .cajaProd {
-  margin-right: 100px; }
+  margin-right: 100px;
+  padding-left: 0;
+  padding-right: 0; }
   .cajaProd .fotoProd {
     border: #145c9e 5px outset; }
   .cajaProd:hover {
@@ -169,18 +178,14 @@ footer {
   justify-content: center;
   align-items: center; }
 
-.cajaLista {
-  margin: 30px; }
-
 .listas {
-  list-style-image: url(../assets/check.png);
-  font-weight: bolder;
-  margin: 50px;
-  background: #f6f6f6; }
-
-.listas li:hover {
-  transform: scale(1.2, 1.2);
-  transition: all .5s; }
+  list-style-image: url(../assets/cheque3.png);
+  background: #f6f6f6;
+  font-weight: bolder; }
+  .listas li:hover {
+    background: #f6f6f6;
+    transform: scale(1.1, 1.1);
+    transition: all .5s; }
 
 .aside {
   background: #f6f6f6;
@@ -188,10 +193,10 @@ footer {
   margin-left: 80px; }
 
 .lineaNp {
-  height: 10px;
+  height: 20px;
   background-image: linear-gradient(90deg, transparent, #145c9e, transparent);
   border: 0;
-  height: 4px;
+  height: 5px;
   position: relative;
   bottom: -5px; }
 
