@@ -98,26 +98,56 @@ h1, h2 {
   font-weight: bolder; 
   margin: auto;}
 
-@media (max-width: 768px) {
-  h1 {
-    font-size: 3em; }
-  h2 {
-    font-size: 2em; }  
-  main div p {
-    font-size: .7em; }}
+.contFormIndex{
+  background-color: #f6f6f6;
+  background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.5) 50%);
+  background-size: 50px 50px;
+}
+.form-inline{
+  display: flex;
+  justify-content: center;
+& input:hover{
+  padding: 10px;
+  box-shadow: 5px 5px 10px #121113;
+  font-size: 1.5em;
+  font-weight: bolder;
+  transition: all .5s; }
+& select:hover{
+  @extend input:hover; }
+& .btn-primary:hover{
+  @extend input:hover; }}
 
 .cajaParrafo {
-  font-weight: bolder;
+  font-weight: light;
   text-align: justify;
   max-width: 75%;
   height: auto;
   padding: 5px;
   margin: auto;
   margin-bottom: 40px;
-  background: $blanco; 
+  background: $blanco; }  
+
+  /* Lo saque afuera del .cajaParrafo porque no me agarraba el estilo */
   p {
   width: 100%;
-  font-size: 1em; }}
+  font-size: 1.5em;
+  line-height: 1.5; }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3em; }
+  h2 {
+    font-size: 3em; }
+  .h2Ubi{
+   font-size: 2em;}  
+  .cajaParrafo p {
+    font-size: .8em; }
+  .form-inline input:hover, .form-inline select:hover{
+    padding: 3px;
+    font-size: 1em;
+    width: 80%}
+  .form-inline .btn-primary:hover{
+    width: 50%; }}
 
 /*=====  End of MAIN comment block  ======*/
 /* ----------------------------------------- */
@@ -148,7 +178,7 @@ footer {
   align-items: center; 
   & a i:hover{
   transform: translateY(-3px);
-  transition: transform .5s;
+  transition: all .5s;
   color: #f6f6f6;
   }
   &:active{
@@ -174,7 +204,9 @@ footer {
   padding-left: 0;
   padding-right: 0;
 .fotoProd {
-  border: #145c9e 5px outset;}
+  border: #145c9e 5px outset;
+  width: 100%;
+  height: auto;}
 &:hover {
   transform: scale(1.01, 1.01);
   box-shadow: 5px 5px 10px #121113;
@@ -185,35 +217,78 @@ footer {
   justify-content: center;
   align-items: center; }
 
-.cajaLista {
-   }
-
 .listas {
-  list-style-image: url(../assets/cheque3.png);
+  list-style-position: inside;
+  list-style: none;
   background: #f6f6f6;
   font-weight: bolder;
+& li::before{
+  content: " ";
+  background: url("../assets/cheque3.png") no-repeat center;
+  padding: 1.5em;
+  line-height: 2.5;}
 & li:hover {
-  background: #f6f6f6;
   transform: scale(1.10, 1.10);
   transition: all .5s;}}
 
-.aside {
+.contTextos{
+  margin-left: 3em; 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  h4{
+  text-align: center;
   background: #f6f6f6;
+  margin-bottom: 15px;
+  &:hover{
+  text-shadow: 1px 1px #145c9e;
+  transform: scale(1.10, 1.10);
+  transition: all .5s;
+  }}
+  .aside {
   text-align: left;
-  margin-left: 80px; }
+  background: #f6f6f6;
+  padding: 0 5px;
+  font-size: 1em;}}
 
 .lineaNp {
-  height: 20px;
+  height: 18px;
   background-image: linear-gradient(90deg, transparent, #145c9e, transparent);
   border: 0;
-  height: 5px;
-  position: relative;
-  bottom: -5px; }
+  height: 5px;}
+.lineaNpLista {
+  @extend .lineaNp;
+  height: 20px;
+  height: 2px;}
 
 @media (max-width: 768px) {
   .cajaProd {
     display: flex;
-    justify-content: center; } }
+    justify-content: center;
+    margin-right:0; } 
+  .listas{
+    font-size: .5em;
+    padding-right: 10px;
+  & li::before{
+  background: url("../assets/cheque2.png") no-repeat center;}}
+  .contTextos{
+    margin: 0;
+    padding: 0;
+  h4{
+      font-size: .9em;
+      margin-bottom: 10px;
+      margin-top: 20px;}
+  h4 small {
+    font-size: 60%; }
+  .aside{
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding: 2px;
+    font-size: .6em;
+  }}
+
+  }
 
 /*=====  End of NUESTROS PRODUCTOS comment block  ======*/
 /* ----------------------------------------- */
@@ -228,7 +303,9 @@ footer {
   text-align: justify;
   width: 100%;
   font-size: 1.3em;
-  background: #f6f6f6; }
+  background: #f6f6f6; 
+  margin-top: 30px;
+  margin-bottom: 30px;}
 
 .fotoNosotros {
   border: #145c9e 5px outset;
@@ -329,12 +406,12 @@ footer {
   box-shadow: 5px 5px 10px #121113;
   transition: all .5s; }
 
-label {
+.form-group label {
   background: rgba(18, 17, 19, 0.5);
   border-radius: 5px;
   margin: 3px 0; }
 
-label:hover {
+.form-group label:hover {
   background: rgba(246, 246, 246, 0.5);
   color: #121113;
   transition: all .5s;
