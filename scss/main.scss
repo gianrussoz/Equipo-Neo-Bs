@@ -211,12 +211,11 @@ footer {
   transform: scale(1.01, 1.01);
   box-shadow: 5px 5px 10px #121113;
   transition: all .5s;}}
-
 .seccion1 {
   display: flex;
   justify-content: center;
-  align-items: center; }
-
+  align-items: center; 
+}
 .listas {
   list-style-position: inside;
   list-style: none;
@@ -277,9 +276,9 @@ footer {
   h4{
       font-size: .9em;
       margin-bottom: 10px;
-      margin-top: 20px;}
+      margin-top: 20px;
   h4 small {
-    font-size: 60%; }
+    font-size: 60%; }}
   .aside{
     margin-top: 5px;
     margin-bottom: 0;
@@ -298,8 +297,7 @@ footer {
 .contTitulo {
   display: flex;
   justify-content: center; }
-
-.pNosotros {
+.pNosotros {/* Lo saque de la caja porque no me tomaba el estilo que le puse */
   text-align: justify;
   width: 100%;
   font-size: 1.3em;
@@ -311,12 +309,11 @@ footer {
   border: #145c9e 5px outset;
   padding: 0;
   margin: auto;
-  margin-bottom: 10px; }
-
-.fotoNosotros:hover {
+  margin-bottom: 10px; 
+&:hover {
   transform: scale(1.005, 1.005);
   box-shadow: 5px 5px 10px #121113;
-  transition: all .5s; }
+  transition: all .5s; }}
 
 .textoNosotros {
   text-align: center;
@@ -347,17 +344,15 @@ footer {
   justify-content: center;
   max-width: 100%;
   height: auto;
-  margin-top: 20px; }
-
+  margin-top: 20px; 
 .iframe {
   border: #145c9e 5px outset;
   width: 100%;
-  padding: 0; }
-
-.iframe:hover {
+  padding: 0; 
+&:hover {
   transform: scale(1.01, 1.01);
   box-shadow: 5px 5px 10px #121113;
-  transition: all .5s; }
+  transition: all .5s; }}}
 
 /*=====  End of UBICACION comment block  ======*/
 /* ----------------------------------------- */
@@ -365,66 +360,56 @@ footer {
 =            CONTACTANOS comment block            =
 ===============================================*/
 #contForm {
-  margin: auto; }
-
+  margin: auto; 
 .flexForm {
   display: flex;
   justify-content: center;
-  background: url(https://cdn.pixabay.com/photo/2017/11/13/11/45/checklist-2945401_960_720.jpg) center no-repeat;
+  background: url(https://cdn.pixabay.com/photo/2017/11/13/11/45/checklist-2945401_960_720.jpg) center;
   color: #f6f6f6;
   text-shadow: 1px 1px #121113;
   font-size: 1.5em;
   border: #145c9e 5px outset;
   border-radius: 10px;
   width: 100%;
-  margin-bottom: 15px; }
-
-.flexForm:hover {
+  margin-bottom: 15px; 
+&:hover {
   box-shadow: 5px 5px 10px #121113;
   border: #121113 5px outset;
-  transition: all .5s; }
-
+  transition: all .5s; }}
 .form {
   text-align: center; }
-
 .form-control {
   margin: 5px 0px;
   background: #f6f6f6;
   border: #121113 #f6f6f6 4px inset;
-  border-radius: 10px; }
-
-.form-control:focus {
+  border-radius: 10px; 
+&:focus {
   transform: scale(1.1);
   box-shadow: 5px 5px 10px #121113;
-  transition: all .5s; }
-
+  transition: all .5s; }}
 .boton {
-  margin: 10px; }
-
-.boton:active {
+  margin: 10px; 
+&:active {
   transform: scale(1.1);
   box-shadow: 5px 5px 10px #121113;
-  transition: all .5s; }
-
+  transition: all .5s; }}
 .form-group label {
   background: rgba(18, 17, 19, 0.5);
   border-radius: 5px;
-  margin: 3px 0; }
-
-.form-group label:hover {
+  margin: 3px 0;
+&:hover {
   background: rgba(246, 246, 246, 0.5);
   color: #121113;
   transition: all .5s;
-  text-shadow: 1px 1px #145c9e; }
-
+  text-shadow: 1px 1px #145c9e; }}
 .boton:hover {
   background: #f6f6f6;
-  color: #007BFF; }
+  color: #007BFF; }}
 
 @media (max-width: 768px) {
   .form-control {
     width: 100%; }
   .flexForm {
-    font-size: 1.2em; } }
+    font-size: 1.2em;} }
 
 /*=====  End of CONTACTANOS comment block  ======*/
