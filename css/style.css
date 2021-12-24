@@ -321,7 +321,7 @@ footer {
   .textoNosotros {
     font-size: .6em; }
   .pNosotros {
-    font-size: .8em; } }
+    font-size: .7em; } }
 
 /*=====  End of NOSOTROS comment block  ======*/
 /* ----------------------------------------- */
@@ -381,11 +381,11 @@ footer {
       transform: scale(1.1);
       box-shadow: 5px 5px 10px #121113;
       transition: all .5s; }
-  #contForm .form-group label {
+  #contForm .flexForm label {
     background: rgba(18, 17, 19, 0.5);
     border-radius: 5px;
     margin: 3px 0; }
-    #contForm .form-group label:hover {
+    #contForm .flexForm label:hover {
       background: rgba(246, 246, 246, 0.5);
       color: #121113;
       transition: all .5s;
