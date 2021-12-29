@@ -133,6 +133,13 @@ h1, h2 {
   font-size: 1.5em;
   line-height: 1.5; }
 
+.fa-arrow-circle-up{
+  margin: 0 10px 10px;
+  padding: 0;
+  border: 1px solid #121113;
+  border-radius: 40px;
+  font-size: 5em;}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 3em; }
@@ -147,7 +154,9 @@ h1, h2 {
     font-size: 1em;
     width: 80%}
   .form-inline .btn-primary:hover{
-    width: 50%; }}
+    width: 50%;}
+  .fa-arrow-circle-up{
+    font-size: 3em;}}
 
 /*=====  End of MAIN comment block  ======*/
 /* ----------------------------------------- */
@@ -155,44 +164,62 @@ h1, h2 {
 =            FOOTER comment block            =
 ============================================*/
 footer {
-  background: #121113; }
+  background: #121113; 
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
-.cajaCopy {
-  align-content: flex-end;
-  justify-content: center; }
+.contCopyright {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .fa-copyright {
   color: #f6f6f6;
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  padding-top: 5px;
+  padding-left: 5px520; }
 
 .texto {
   color: #f6f6f6;
   font-size: 1em;
   align-content: center;
-  margin: 0; }
+  margin: 0; 
+  padding: 0;}
 
 .redes {
   display: flex;
   justify-content: center;
-  align-items: center; 
-  & a i:hover{
+  align-items: center;
+  padding: 0;
+& a i{
+  padding: 0 10px;
+&:hover{
   transform: translateY(-3px);
   transition: all .5s;
-  color: #f6f6f6;
-  }
+  color: #f6f6f6; }
   &:active{
   color: black;
-  }}
+  }}}
+
+.logoFooter{
+  width: 10em;
+  height: auto;
+  padding: 1em 0;}
 
 @media (max-width: 768px) {
-  .fa-copyright {
-    justify-content: center; }
   .texto {
-    font-size: .8em;
+    font-size: .7em;
     display: flex;
     justify-content: center;
-    margin: auto; } }
+    margin: auto; 
+    padding-top: 5px;} 
+  .redes a i{
+    padding-top: 5px;}
+  .cajaLogoFooter{
+    display: flex;
+    justify-content: center;}}
 
 /*=====  End of FOOTER comment block  ======*/
 /* ----------------------------------------- */
@@ -208,7 +235,6 @@ footer {
   width: 100%;
   height: auto;}
 &:hover {
-  transform: scale(1.01, 1.01);
   box-shadow: 5px 5px 10px #121113;
   transition: all .5s;}}
 .seccion1 {
@@ -341,6 +367,8 @@ footer {
 =            UBICACION comment block            =
 ===============================================*/
 .cajaUbicacion {
+  display: flex;
+  align-content: center;
   justify-content: center;
   max-width: 100%;
   height: auto;
@@ -353,6 +381,19 @@ footer {
   transform: scale(1.01, 1.01);
   box-shadow: 5px 5px 10px #121113;
   transition: all .5s; }}}
+
+.listaUbicacion{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+& p{
+  margin: 10px 0;
+  background: #f6f6f6;}}
+.lineaNpListaUbicacion{
+  height: 20px;
+  background-image: linear-gradient(90deg, #145c9e, transparent);
+  border: 0;
+  height: 2px;}
 
 /*=====  End of UBICACION comment block  ======*/
 /* ----------------------------------------- */
