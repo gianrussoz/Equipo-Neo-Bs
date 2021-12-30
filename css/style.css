@@ -1,10 +1,6 @@
 * {
   font-family: 'Montserrat', sans-serif; }
 
-/*============================================
-=            VARIABLES comment block         =
-============================================*/
-/*=====  End of VARIABLES comment block  ======*/
 body {
   background-color: #f6f6f6;
   opacity: 1;
@@ -91,7 +87,8 @@ h1, h2 {
   text-transform: uppercase;
   text-shadow: 4px 4px #145c9e;
   font-weight: bolder;
-  margin: auto; }
+  margin: auto;
+  margin-top: .1em; }
 
 .contFormIndex {
   background-color: #f6f6f6;
@@ -102,15 +99,15 @@ h1, h2 {
   display: flex;
   justify-content: center; }
   .form-inline input:hover, .form-inline select:hover, .form-inline .btn-primary:hover {
-    padding: 10px;
+    padding: 5px;
     box-shadow: 5px 5px 10px #121113;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bolder;
     transition: all .5s; }
 
 .cajaParrafo {
   font-weight: light;
-  text-align: justify;
+  text-align: left;
   max-width: 75%;
   height: auto;
   padding: 5px;
@@ -133,19 +130,16 @@ p {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 3em; }
+    font-size: 3em;
+    text-shadow: 3px 3px  #145c9e; }
   h2 {
-    font-size: 3em; }
-  .h2Ubi {
-    font-size: 2em; }
+    font-size: 2em;
+    margin-top: .5em;
+    text-shadow: 2px 2px  #145c9e; }
   .cajaParrafo p {
-    font-size: .8em; }
-  .form-inline input:hover, .form-inline select:hover, .form-inline .btn-primary:hover, .form-inline select:hover {
-    padding: 3px;
-    font-size: 1em;
-    width: 80%; }
-  .form-inline .btn-primary:hover {
-    width: 50%; }
+    font-size: .8em;
+    margin: 0;
+    padding: 0 5px; }
   .fa-arrow-circle-up {
     font-size: 3em; } }
 
@@ -191,7 +185,7 @@ footer {
       transition: all .5s;
       color: #f6f6f6; }
     .redes a i:active {
-      color: black; }
+      color: #121113; }
 
 .logoFooter {
   width: 10em;
@@ -282,15 +276,15 @@ footer {
     justify-content: center;
     margin-right: 0; }
   .listas {
-    font-size: .5em;
-    padding-right: 10px; }
+    font-size: .6em;
+    margin-bottom: 0; }
     .listas li::before {
       background: url("../assets/cheque2.png") no-repeat center; }
   .contTextos {
     margin: 0;
     padding: 0; }
     .contTextos h4 {
-      font-size: .9em;
+      font-size: 1.1em;
       margin-bottom: 10px;
       margin-top: 20px; }
       .contTextos h4 h4 small {
@@ -385,6 +379,25 @@ footer {
   border: 0;
   height: 2px; }
 
+.infoad h4 {
+  font-size: 2em; }
+
+@media (max-width: 768px) {
+  .infoad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 10px 0; }
+    .infoad h4 {
+      font-size: 1.6em;
+      text-align: center;
+      margin-top: 10px; }
+    .infoad .listaUbicacion {
+      font-size: .6em; } }
+
 /*=====  End of UBICACION comment block  ======*/
 /* ----------------------------------------- */
 /*===============================================
@@ -401,8 +414,7 @@ footer {
     font-size: 1.5em;
     border: #145c9e 5px outset;
     border-radius: 10px;
-    width: 100%;
-    margin-bottom: 15px; }
+    margin-bottom: 1em; }
     #contForm .flexForm:hover {
       box-shadow: 5px 5px 10px #121113;
       border: #121113 5px outset;
@@ -427,7 +439,8 @@ footer {
   #contForm .flexForm label {
     background: rgba(18, 17, 19, 0.5);
     border-radius: 5px;
-    margin: 3px 0; }
+    margin: 3px 0;
+    padding: 0 5px; }
     #contForm .flexForm label:hover {
       background: rgba(246, 246, 246, 0.5);
       color: #121113;
@@ -438,9 +451,12 @@ footer {
     color: #007BFF; }
 
 @media (max-width: 768px) {
-  .form-control {
-    width: 100%; }
-  .flexForm {
-    font-size: 1.2em; } }
+  #contForm {
+    padding: 0; }
+  #contForm .flexForm {
+    margin: 1em 0;
+    font-size: 1em; }
+  .form-group {
+    margin-top: .5em; } }
 
 /*=====  End of CONTACTANOS comment block  ======*/
