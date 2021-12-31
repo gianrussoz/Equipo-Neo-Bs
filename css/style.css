@@ -349,21 +349,31 @@ footer {
 /*===============================================
 =            UBICACION comment block            =
 ===============================================*/
-.cajaUbicacion {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  max-width: 100%;
-  height: auto;
-  margin-top: 20px; }
-  .cajaUbicacion .iframe {
+.gridUbicacion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "h2 h2"  "iframe info";
+  grid-gap: .6em; }
+  .gridUbicacion .cajaIframe {
+    grid-area: iframe;
+    display: flex;
+    justify-content: end; }
+  .gridUbicacion .iframe {
     border: #145c9e 5px outset;
-    width: 100%;
-    padding: 0; }
-    .cajaUbicacion .iframe:hover {
+    padding: 0;
+    width: 80%;
+    height: auto; }
+    .gridUbicacion .iframe:hover {
       transform: scale(1.01, 1.01);
       box-shadow: 5px 5px 10px #121113;
       transition: all .5s; }
+  .gridUbicacion .gridH2 {
+    grid-area: h2; }
+  .gridUbicacion .infoad {
+    grid-area: info;
+    max-width: 100%; }
+    .gridUbicacion .infoad h4 {
+      font-size: 2em; }
 
 .listaUbicacion {
   display: flex;
@@ -379,8 +389,43 @@ footer {
   border: 0;
   height: 2px; }
 
-.infoad h4 {
-  font-size: 2em; }
+.gridFooter {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 50% 25% auto; }
+
+.contCopyright {
+  grid-column: 1/2; }
+
+.redes {
+  grid-column: 2/3; }
+
+.cajaLogoFooter {
+  grid-column: 3/4; }
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .gridUbicacion {
+    grid-template-areas: "h2 h2"  "iframe" "info"; }
+  .gridFooter {
+    display: grid;
+    grid-template-rows: repeat(3, 33%);
+    width: 100%;
+    height: auto; }
+  .contCopyright {
+    grid-row: 1/2;
+    grid-column: 1/4; }
+    .contCopyright .texto {
+      font-size: .72em; }
+  .redes {
+    grid-row: 2/3;
+    grid-column: 1/4; }
+  .cajaLogoFooter {
+    grid-row: 3/4;
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center; }
+    .cajaLogoFooter .logoFooter {
+      padding: 0; } }
 
 @media (max-width: 768px) {
   .infoad {
