@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: 'Montserrat', sans-serif; }
 
@@ -66,12 +67,6 @@ hr {
   margin: 0;
   width: 100%; }
 
-@media (max-width: 768px) {
-  .nav-link {
-    font-size: 1.5em;
-    padding: 5px;
-    margin: 0; } }
-
 /*=====  End of HEADER comment block  ======*/
 /* ----------------------------------------- */
 /*==========================================
@@ -128,21 +123,6 @@ p {
   border-radius: 40px;
   font-size: 5em; }
 
-@media (max-width: 768px) {
-  h1 {
-    font-size: 3em;
-    text-shadow: 3px 3px  #145c9e; }
-  h2 {
-    font-size: 2em;
-    margin-top: .5em;
-    text-shadow: 2px 2px  #145c9e; }
-  .cajaParrafo p {
-    font-size: .8em;
-    margin: 0;
-    padding: 0 5px; }
-  .fa-arrow-circle-up {
-    font-size: 3em; } }
-
 /*=====  End of MAIN comment block  ======*/
 /* ----------------------------------------- */
 /*============================================
@@ -191,19 +171,6 @@ footer {
   width: 10em;
   height: auto;
   padding: 1em 0; }
-
-@media (max-width: 768px) {
-  .texto {
-    font-size: .7em;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    padding-top: 5px; }
-  .redes a i {
-    padding-top: 5px; }
-  .cajaLogoFooter {
-    display: flex;
-    justify-content: center; } }
 
 /*=====  End of FOOTER comment block  ======*/
 /* ----------------------------------------- */
@@ -269,32 +236,6 @@ footer {
 .lineaNpLista {
   height: 20px;
   height: 2px; }
-
-@media (max-width: 768px) {
-  .cajaProd {
-    display: flex;
-    justify-content: center;
-    margin-right: 0; }
-  .listas {
-    font-size: .6em;
-    margin-bottom: 0; }
-    .listas li::before {
-      background: url("../assets/cheque2.png") no-repeat center; }
-  .contTextos {
-    margin: 0;
-    padding: 0; }
-    .contTextos h4 {
-      font-size: 1.1em;
-      margin-bottom: 10px;
-      margin-top: 20px; }
-      .contTextos h4 h4 small {
-        font-size: 60%; }
-    .contTextos .aside {
-      margin-top: 5px;
-      margin-bottom: 0;
-      margin-left: 0;
-      padding: 2px;
-      font-size: .6em; } }
 
 /*=====  End of NUESTROS PRODUCTOS comment block  ======*/
 /* ----------------------------------------- */
@@ -382,22 +323,6 @@ footer {
 .infoad h4 {
   font-size: 2em; }
 
-@media (max-width: 768px) {
-  .infoad {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-left: 0;
-    padding-right: 0;
-    margin: 10px 0; }
-    .infoad h4 {
-      font-size: 1.6em;
-      text-align: center;
-      margin-top: 10px; }
-    .infoad .listaUbicacion {
-      font-size: .6em; } }
-
 /*=====  End of UBICACION comment block  ======*/
 /* ----------------------------------------- */
 /*===============================================
@@ -450,6 +375,99 @@ footer {
     background: #f6f6f6;
     color: #007BFF; }
 
+/*=====  End of CONTACTANOS comment block  ======*/
+/*===============================================
+=            Media Query comment block          =
+===============================================*/
+/*  HEADER  */
+@media (max-width: 768px) {
+  .nav-link {
+    font-size: 1.5em;
+    padding: 5px;
+    margin: 0; } }
+
+/*  MAIN  INDEX  */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3em;
+    text-shadow: 3px 3px  #145c9e; }
+  h2 {
+    font-size: 2em;
+    margin-top: .5em;
+    text-shadow: 2px 2px  #145c9e; }
+  .cajaParrafo p {
+    font-size: .8em;
+    margin: 0;
+    padding: 0 5px; }
+  .fa-arrow-circle-up {
+    font-size: 3em; } }
+
+/*  FOOTER  */
+@media (max-width: 768px) {
+  .texto {
+    font-size: .7em;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 5px; }
+  .redes a i {
+    padding-top: 5px; }
+  .cajaLogoFooter {
+    display: flex;
+    justify-content: center; } }
+
+/*  MAIN NUESTROS PRODUCTOS  */
+@media (max-width: 768px) {
+  .cajaProd {
+    display: flex;
+    justify-content: center;
+    margin-right: 0; }
+  .listas {
+    font-size: .6em;
+    margin-bottom: 0; }
+    .listas li::before {
+      background: url("../assets/cheque2.png") no-repeat center; }
+  .contTextos {
+    margin: 0;
+    padding: 0; }
+    .contTextos h4 {
+      font-size: 1.1em;
+      margin-bottom: 10px;
+      margin-top: 20px; }
+      .contTextos h4 h4 small {
+        font-size: 60%; }
+    .contTextos .aside {
+      margin-top: 5px;
+      margin-bottom: 0;
+      margin-left: 0;
+      padding: 2px;
+      font-size: .6em; } }
+
+/*  MAIN NOSOTROS  */
+@media (max-width: 768px) {
+  .textoNosotros {
+    font-size: .6em; }
+  .pNosotros {
+    font-size: .7em; } }
+
+/*  MAIN UBICACIÓN */
+@media (max-width: 768px) {
+  .infoad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 10px 0; }
+    .infoad h4 {
+      font-size: 1.6em;
+      text-align: center;
+      margin-top: 10px; }
+    .infoad .listaUbicacion {
+      font-size: .6em; } }
+
+/*  MAIN CONTACTANOS  */
 @media (max-width: 768px) {
   #contForm {
     padding: 0; }
@@ -459,4 +477,4 @@ footer {
   .form-group {
     margin-top: .5em; } }
 
-/*=====  End of CONTACTANOS comment block  ======*/
+/*=====  End of Media Query comment block  ======*/
