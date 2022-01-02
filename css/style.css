@@ -64,12 +64,7 @@ hr {
   background: linear-gradient(90deg, #121113, #145c9e, #121113);
   height: 7px;
   padding: 0;
-<<<<<<< HEAD
-  margin: 0;
-  width: 100%; }
-=======
   margin: 0; }
->>>>>>> grid
 
 /*=====  End of HEADER comment block  ======*/
 /* ----------------------------------------- */
@@ -373,8 +368,6 @@ header {
 .fa-arrow-circle-up, .fa-instagram, .fa-facebook-square {
   color: #145c9e; }
 
-<<<<<<< HEAD
-=======
 /* Footer */
 .gridFooter {
   display: grid;
@@ -389,7 +382,6 @@ header {
 .cajaLogoFooter {
   grid-column: 3/4; }
 
->>>>>>> grid
 /*=====  End of UBICACION comment block  ======*/
 /* ----------------------------------------- */
 /*===============================================
@@ -442,15 +434,9 @@ header {
     background: #f6f6f6;
     color: #007BFF; }
 
-<<<<<<< HEAD
-/*=====  End of CONTACTANOS comment block  ======*/
-/*===============================================
-=            Media Query comment block          =
-=======
 /*======  End of CONTACTANOS comment block  ======*/
 /*===============================================
 =            Media Query comment block          =
->>>>>>> grid
 ===============================================*/
 /*  HEADER  */
 @media (max-width: 768px) {
@@ -523,24 +509,6 @@ header {
   .pNosotros {
     font-size: .7em; } }
 
-<<<<<<< HEAD
-/*  MAIN UBICACIÓN */
-@media (max-width: 768px) {
-  .infoad {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-left: 0;
-    padding-right: 0;
-    margin: 10px 0; }
-    .infoad h4 {
-      font-size: 1.6em;
-      text-align: center;
-      margin-top: 10px; }
-    .infoad .listaUbicacion {
-      font-size: .6em; } }
-=======
 /*  GRID UBICACIÓN */
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   /* Header */
@@ -612,7 +580,6 @@ header {
     justify-content: center; }
     .cajaLogoFooter .logoFooter {
       padding: 1em 0; } }
->>>>>>> grid
 
 /*  MAIN CONTACTANOS  */
 @media (max-width: 768px) {
@@ -624,8 +591,4 @@ header {
   .form-group {
     margin-top: .5em; } }
 
-<<<<<<< HEAD
-/*=====  End of Media Query comment block  ======*/
-=======
 /*======  End of Media Query comment block  ======*/
->>>>>>> grid

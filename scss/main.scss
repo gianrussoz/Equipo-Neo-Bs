@@ -64,12 +64,7 @@ hr {
   background: linear-gradient(90deg, #121113, #145c9e, #121113);
   height: 7px;
   padding: 0;
-<<<<<<< HEAD
-  margin: 0;
-  width: 100%; }
-=======
   margin: 0;}
->>>>>>> grid
 
 /*=====  End of HEADER comment block  ======*/
 /* ----------------------------------------- */
@@ -366,11 +361,6 @@ header{
   height: 20px;
   background-image: linear-gradient(90deg, #145c9e, transparent);
   border: 0;
-<<<<<<< HEAD
-  height: 2px;}
-.infoad h4{
-  font-size: 2em;}
-=======
   height: 2px;
   min-width: 100%;}
 
@@ -386,7 +376,6 @@ header{
   grid-column: 2/3;}
 .cajaLogoFooter{
   grid-column: 3/4;}
->>>>>>> grid
 
 /*=====  End of UBICACION comment block  ======*/
 /* ----------------------------------------- */
@@ -440,11 +429,7 @@ header{
   background: #f6f6f6;
   color: #007BFF; }}
 
-<<<<<<< HEAD
-/*=====  End of CONTACTANOS comment block  ======*/
-=======
 /*======  End of CONTACTANOS comment block  ======*/
->>>>>>> grid
 
 /*===============================================
 =            Media Query comment block          =
@@ -519,10 +504,7 @@ header{
     font-size: .6em;
   }}}
 
-<<<<<<< HEAD
-=======
 
->>>>>>> grid
 /*  MAIN NOSOTROS  */
 
 @media (max-width: 768px) {
@@ -531,12 +513,6 @@ header{
   .pNosotros {
     font-size: .7em; } }
 
-<<<<<<< HEAD
-/*  MAIN UBICACIÓN */
-
-@media (max-width: 768px) {
-.infoad{
-=======
 /*  GRID UBICACIÓN */
 
 @media only screen and (min-width: 0px) and (max-width: 768px){
@@ -577,28 +553,19 @@ header{
   margin: 1em 0;
   grid-column: 1/3;
   grid-row: 3/4;  
->>>>>>> grid
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
   padding-left: 0;
   padding-right: 0;
-<<<<<<< HEAD
-  margin: 10px 0;
-& h4{
-  font-size: 1.6em;
-=======
 & h4{
   font-size: 1.7em;
->>>>>>> grid
   text-align: center;
   margin-top: 10px;}
 & .listaUbicacion{
   font-size: .6em;}}}
 
-<<<<<<< HEAD
-=======
 /* Footer */
 .gridFooter{
   display: grid;
@@ -623,7 +590,6 @@ header{
 & .logoFooter{
   padding: 1em 0;}}}
 
->>>>>>> grid
 /*  MAIN CONTACTANOS  */
 
 @media (max-width: 768px) {
@@ -635,8 +601,4 @@ header{
   .form-group{
     margin-top: .5em;}}
 
-<<<<<<< HEAD
-/*=====  End of Media Query comment block  ======*/
-=======
 /*======  End of Media Query comment block  ======*/
->>>>>>> grid
