@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: 'Montserrat', sans-serif; }
 
@@ -28,9 +29,9 @@ body {
   .nav-link:hover {
     color: #145c9e;
     text-shadow: 1px 1px #121113; }
-  .nav-link:active {
-    color: #121113;
-    text-shadow: 1px 1px #145c9e; }
+    .nav-link:hover:active {
+      color: #121113;
+      text-shadow: 1px 1px #145c9e; }
 
 .nav-item {
   padding: 0 30px; }
@@ -63,14 +64,7 @@ hr {
   background: linear-gradient(90deg, #121113, #145c9e, #121113);
   height: 7px;
   padding: 0;
-  margin: 0;
-  width: 100%; }
-
-@media (max-width: 768px) {
-  .nav-link {
-    font-size: 1.5em;
-    padding: 5px;
-    margin: 0; } }
+  margin: 0; }
 
 /*=====  End of HEADER comment block  ======*/
 /* ----------------------------------------- */
@@ -128,21 +122,6 @@ p {
   border-radius: 40px;
   font-size: 5em; }
 
-@media (max-width: 768px) {
-  h1 {
-    font-size: 3em;
-    text-shadow: 3px 3px  #145c9e; }
-  h2 {
-    font-size: 2em;
-    margin-top: .5em;
-    text-shadow: 2px 2px  #145c9e; }
-  .cajaParrafo p {
-    font-size: .8em;
-    margin: 0;
-    padding: 0 5px; }
-  .fa-arrow-circle-up {
-    font-size: 3em; } }
-
 /*=====  End of MAIN comment block  ======*/
 /* ----------------------------------------- */
 /*============================================
@@ -184,26 +163,11 @@ footer {
       transform: translateY(-3px);
       transition: all .5s;
       color: #f6f6f6; }
-    .redes a i:active {
-      color: #121113; }
 
 .logoFooter {
   width: 10em;
   height: auto;
   padding: 1em 0; }
-
-@media (max-width: 768px) {
-  .texto {
-    font-size: .7em;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    padding-top: 5px; }
-  .redes a i {
-    padding-top: 5px; }
-  .cajaLogoFooter {
-    display: flex;
-    justify-content: center; } }
 
 /*=====  End of FOOTER comment block  ======*/
 /* ----------------------------------------- */
@@ -270,32 +234,6 @@ footer {
   height: 20px;
   height: 2px; }
 
-@media (max-width: 768px) {
-  .cajaProd {
-    display: flex;
-    justify-content: center;
-    margin-right: 0; }
-  .listas {
-    font-size: .6em;
-    margin-bottom: 0; }
-    .listas li::before {
-      background: url("../assets/cheque2.png") no-repeat center; }
-  .contTextos {
-    margin: 0;
-    padding: 0; }
-    .contTextos h4 {
-      font-size: 1.1em;
-      margin-bottom: 10px;
-      margin-top: 20px; }
-      .contTextos h4 h4 small {
-        font-size: 60%; }
-    .contTextos .aside {
-      margin-top: 5px;
-      margin-bottom: 0;
-      margin-left: 0;
-      padding: 2px;
-      font-size: .6em; } }
-
 /*=====  End of NUESTROS PRODUCTOS comment block  ======*/
 /* ----------------------------------------- */
 /*============================================
@@ -338,17 +276,54 @@ footer {
   position: relative;
   bottom: 10px; }
 
-@media (max-width: 768px) {
-  .textoNosotros {
-    font-size: .6em; }
-  .pNosotros {
-    font-size: .7em; } }
-
 /*=====  End of NOSOTROS comment block  ======*/
 /* ----------------------------------------- */
 /*===============================================
 =            UBICACION comment block            =
 ===============================================*/
+/* Header */
+header {
+  width: 100%;
+  background: #ffffff; }
+
+.gridHeader {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center; }
+
+.cajaLogo {
+  display: flex;
+  justify-content: center;
+  grid-column: 1/2; }
+  .cajaLogo .logo {
+    margin: 13px; }
+
+.cajaUl {
+  grid-column: 2/8; }
+  .cajaUl .ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style-type: none; }
+
+.ul li:hover {
+  transform: translateY(-10px);
+  transition: transform .5s; }
+
+.ul li a {
+  text-decoration: none;
+  color: #121113;
+  font-size: 2em;
+  text-shadow: 1px 1px #145c9e;
+  font-weight: bolder; }
+  .ul li a:hover {
+    color: #145c9e;
+    text-shadow: 1px 1px #121113; }
+    .ul li a:hover:active {
+      color: #121113;
+      text-shadow: 1px 1px #145c9e; }
+
+/* Main */
 .gridUbicacion {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -358,15 +333,15 @@ footer {
     grid-area: iframe;
     display: flex;
     justify-content: end; }
-  .gridUbicacion .iframe {
-    border: #145c9e 5px outset;
-    padding: 0;
-    width: 80%;
-    height: auto; }
-    .gridUbicacion .iframe:hover {
-      transform: scale(1.01, 1.01);
-      box-shadow: 5px 5px 10px #121113;
-      transition: all .5s; }
+    .gridUbicacion .cajaIframe .iframe {
+      border: #145c9e 5px outset;
+      padding: 0;
+      width: 80%;
+      height: auto; }
+      .gridUbicacion .cajaIframe .iframe:hover {
+        transform: scale(1.01, 1.01);
+        box-shadow: 5px 5px 10px #121113;
+        transition: all .5s; }
   .gridUbicacion .gridH2 {
     grid-area: h2; }
   .gridUbicacion .infoad {
@@ -387,11 +362,15 @@ footer {
   height: 20px;
   background-image: linear-gradient(90deg, #145c9e, transparent);
   border: 0;
-  height: 2px; }
+  height: 2px;
+  min-width: 100%; }
 
+.fa-arrow-circle-up, .fa-instagram, .fa-facebook-square {
+  color: #145c9e; }
+
+/* Footer */
 .gridFooter {
   display: grid;
-  grid-template-rows: 1fr;
   grid-template-columns: 50% 25% auto; }
 
 .contCopyright {
@@ -403,50 +382,10 @@ footer {
 .cajaLogoFooter {
   grid-column: 3/4; }
 
-@media only screen and (min-width: 0px) and (max-width: 768px) {
-  .gridUbicacion {
-    grid-template-areas: "h2 h2"  "iframe" "info"; }
-  .gridFooter {
-    display: grid;
-    grid-template-rows: repeat(3, 33%);
-    width: 100%;
-    height: auto; }
-  .contCopyright {
-    grid-row: 1/2;
-    grid-column: 1/4; }
-    .contCopyright .texto {
-      font-size: .72em; }
-  .redes {
-    grid-row: 2/3;
-    grid-column: 1/4; }
-  .cajaLogoFooter {
-    grid-row: 3/4;
-    grid-column: 1/4;
-    display: flex;
-    justify-content: center; }
-    .cajaLogoFooter .logoFooter {
-      padding: 0; } }
-
-@media (max-width: 768px) {
-  .infoad {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-left: 0;
-    padding-right: 0;
-    margin: 10px 0; }
-    .infoad h4 {
-      font-size: 1.6em;
-      text-align: center;
-      margin-top: 10px; }
-    .infoad .listaUbicacion {
-      font-size: .6em; } }
-
 /*=====  End of UBICACION comment block  ======*/
 /* ----------------------------------------- */
 /*===============================================
-=            CONTACTANOS comment block            =
+=            CONTACTANOS comment block          =
 ===============================================*/
 #contForm {
   margin: auto; }
@@ -495,6 +434,154 @@ footer {
     background: #f6f6f6;
     color: #007BFF; }
 
+/*======  End of CONTACTANOS comment block  ======*/
+/*===============================================
+=            Media Query comment block          =
+===============================================*/
+/*  HEADER  */
+@media (max-width: 768px) {
+  .nav-link {
+    font-size: 1.5em;
+    padding: 5px;
+    margin: 0; } }
+
+/*  MAIN  INDEX  */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3em;
+    text-shadow: 3px 3px  #145c9e; }
+  h2 {
+    font-size: 2em;
+    margin-top: .5em;
+    text-shadow: 2px 2px  #145c9e; }
+  .cajaParrafo p {
+    font-size: .8em;
+    margin: 0;
+    padding: 0 5px; }
+  .fa-arrow-circle-up {
+    font-size: 3em; } }
+
+/*  FOOTER  */
+@media (max-width: 768px) {
+  .texto {
+    font-size: .7em;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 5px; }
+  .redes a i {
+    padding-top: 5px; }
+  .cajaLogoFooter {
+    display: flex;
+    justify-content: center; } }
+
+/*  MAIN NUESTROS PRODUCTOS  */
+@media (max-width: 768px) {
+  .cajaProd {
+    display: flex;
+    justify-content: center;
+    margin-right: 0; }
+  .listas {
+    font-size: .6em;
+    margin-bottom: 0; }
+    .listas li::before {
+      background: url("../assets/cheque2.png") no-repeat center; }
+  .contTextos {
+    margin: 0;
+    padding: 0; }
+    .contTextos h4 {
+      font-size: 1.1em;
+      margin-bottom: 10px;
+      margin-top: 20px; }
+      .contTextos h4 h4 small {
+        font-size: 60%; }
+    .contTextos .aside {
+      margin-top: 5px;
+      margin-bottom: 0;
+      margin-left: 0;
+      padding: 2px;
+      font-size: .6em; } }
+
+/*  MAIN NOSOTROS  */
+@media (max-width: 768px) {
+  .textoNosotros {
+    font-size: .6em; }
+  .pNosotros {
+    font-size: .7em; } }
+
+/*  GRID UBICACIÓN */
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  /* Header */
+  .gridHeader {
+    display: grid;
+    grid-template-columns: 20% auto; }
+    .gridHeader .logo {
+      grid-column: 1/2;
+      width: auto;
+      height: auto; }
+    .gridHeader .cajaUl {
+      grid-column: 2/3; }
+      .gridHeader .cajaUl .ul {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding: 5px 0; }
+    .gridHeader .ul li a {
+      font-size: 1.2em; }
+  /* Main */
+  .gridUbicacion {
+    grid-template-rows: 10% repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    grid-gap: 0; }
+    .gridUbicacion .cajaIframe {
+      grid-column: 1/3;
+      grid-row: 2/3;
+      display: flex;
+      justify-content: center; }
+      .gridUbicacion .cajaIframe .iframe {
+        border: #145c9e 5px outset;
+        padding: 0;
+        width: 80%;
+        height: auto; }
+    .gridUbicacion .infoad {
+      margin: 1em 0;
+      grid-column: 1/3;
+      grid-row: 3/4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-left: 0;
+      padding-right: 0; }
+      .gridUbicacion .infoad h4 {
+        font-size: 1.7em;
+        text-align: center;
+        margin-top: 10px; }
+      .gridUbicacion .infoad .listaUbicacion {
+        font-size: .6em; }
+  /* Footer */
+  .gridFooter {
+    display: grid;
+    grid-template-rows: repeat(3, 33, 3%);
+    width: 100%;
+    height: 100%; }
+  .contCopyright {
+    grid-row: 1/2;
+    grid-column: 1/4; }
+    .contCopyright .texto {
+      font-size: .72em; }
+  .redes {
+    grid-row: 2/3;
+    grid-column: 1/4; }
+  .cajaLogoFooter {
+    grid-row: 3/4;
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center; }
+    .cajaLogoFooter .logoFooter {
+      padding: 1em 0; } }
+
+/*  MAIN CONTACTANOS  */
 @media (max-width: 768px) {
   #contForm {
     padding: 0; }
@@ -504,4 +591,4 @@ footer {
   .form-group {
     margin-top: .5em; } }
 
-/*=====  End of CONTACTANOS comment block  ======*/
+/*======  End of Media Query comment block  ======*/
